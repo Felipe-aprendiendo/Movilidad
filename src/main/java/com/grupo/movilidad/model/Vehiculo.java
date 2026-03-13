@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 public class Vehiculo {
     @Id//Define la clave primaria de la tabla
     @GeneratedValue(strategy = GenerationType.IDENTITY)//Define el id autoincrementable
-    private int id;
+    private Long id;
     @Enumerated(EnumType.STRING)//guarda los ENUM como String
     private TipoVehiculo tipoVehiculo;
     private String marca;
